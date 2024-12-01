@@ -1,0 +1,71 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore build and dependency files
+/build/
+/dist/
+/node_modules/
+/out/
+/target/
+
+# Ignore log files
+*.log
+*.log.*
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.swp
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.save
+
+# Ignore compiled files
+*.class
+*.o
+*.so
+*.dll
+*.exe
+*.out
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore generated documentation
+/docs/
+/*.docx
+/*.pdf
+
+# Ignore personal config files
+*.iml
+*.suo
+*.user
+*.sln
+*.sublime-workspace
+
+# Specific for C++ projects
+*.dSYM/
+*.obj
+*.elf
+*.map
+*.pdb
+
+# Ignore debug and profiling output
+*.profraw
