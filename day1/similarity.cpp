@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    ifstream inputFile("input.txt"); 
+    ifstream inputFile("day1/input.txt"); 
     if (!inputFile) { 
         cerr << "Error: Could not open file." << endl;
         return 1;
@@ -26,12 +26,17 @@ int main() {
 
     sort(a.begin(), a.end());
     sort(b.begin(), b.end());
-    
-    int dist = 0;
-    for (int i = 0; i < a.size(); i++) {
-        dist += abs(a[i] - b[i]);
-    }
-    cout << dist << endl;
 
+    int br=0;
+    int res=0;
+    for(int i=0;i<a.size();i++){
+        for(int j=br; b[j]<=a[i]; j++){
+            if(a[i]==b[j]){
+                res+=a[i];
+                br++;
+            }
+        }
+    }
+    cout<<res<<endl;
     return 0;
 }

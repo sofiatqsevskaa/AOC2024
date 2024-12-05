@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-    ifstream inputFile("input_day2.txt");
+    ifstream inputFile("day2/input_day2.txt");
     if (!inputFile) {
         cerr << "?";
         return 1;
@@ -27,7 +27,7 @@ int main() {
             a.push_back(num);
         
         if (a.size() == 1) {
-            ++ct;
+            ct++;
             continue;
         }
         

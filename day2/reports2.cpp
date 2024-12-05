@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-    ifstream inputFile("input_day2.txt");
+    ifstream inputFile("day2/input_day2.txt");
     if (!inputFile) {
         cerr << "?";
         return 1;
